@@ -50,7 +50,7 @@ def pregunta_02():
     for _ in range(n_iterations):
 
         # Compute el pronóstico con los parámetros actuales
-        y_pred = x_poly.dot(params)
+        y_pred = np.dot(params, x_poly)
 
         # Calcule el error
         error = y - y_pred
