@@ -8,6 +8,9 @@ polinomial de grado `n`.
 """
 
 
+from array import array
+
+
 def pregunta_01():
     """
     Complete el código presentado a continuación.
@@ -43,7 +46,7 @@ def pregunta_02():
     n_iterations = 1000
 
     # Defina el parámetro inicial `params` como un arreglo de tamaño 3 con ceros
-    params = np.zeros(x_poly.shape[1])
+    params = np.zeros(array.shape[1])
     for _ in range(n_iterations):
 
         # Compute el pronóstico con los parámetros actuales
