@@ -46,11 +46,11 @@ def pregunta_02():
     n_iterations = 1000
 
     # Defina el parámetro inicial `params` como un arreglo de tamaño 3 con ceros
-    params = np.zeros(x_poly.reshape(1,3))
+    params = np.zeros(x_poly.shape[1])
     for _ in range(n_iterations):
 
         # Compute el pronóstico con los parámetros actuales
-        y_pred = np.dot(x_poly, params)
+        y_pred = x_poly.dot(params)
 
         # Calcule el error
         error = y - y_pred
